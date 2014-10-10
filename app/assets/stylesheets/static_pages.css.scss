@@ -16,12 +16,16 @@ a {
 	padding: 4em 0 4em 0;
 }
 
-.nav-bar ul{
-  list-style: none;
+.nav-bar h3{
+  display: inline;
 }
 
-.nav-bar li{
-  display: inline;
+.nav-bar a {
+	float: right;
+	margin: 0 2em;
+	&:hover {
+		color: gray;
+	}
 }
 
 .footer {
@@ -40,10 +44,7 @@ a.button-big {
 	background:#333332;
 	padding:1em 4em;
 	border-radius: 100px;
-	margin-top: 500;
 }
-
-
 
 .container {
 	max-width: 75vw;

@@ -1,9 +1,10 @@
 <div class="container">
-	
-	<%= image_tag 'pdf.png' %>
-	<%= image_tag 'docx.png' %>
-	<h1>Forma para generar contratos</h1>
-	<p>Llena todos los campos para generar un documento:</p>
+	<div class="home-folding-wrapper">
+		<h1>Forma para generar contratos</h1>
+		<%= image_tag 'pdf.png' %>
+		<%= image_tag 'docx.png' %>
+		<p>Llena todos los campos para generar un documento:</p>
+	</div>
 	<%= form_tag('documents') do %>
 		
 		<div class="line-divider"></div>
@@ -239,6 +240,147 @@
     		<p><%= radio_button_tag :health, 'quincenal' %> No
     		<p><%= text_field_tag :health, '¿De qué tipo?' %>
 
+    		<p><%= label_tag :email, "¿Ha sido afianzado?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :health, 'Monto' %>
+    		<p><%= text_field_tag :health, 'Nombre o compañía afianzadora' %>
+
+    		<p><%= label_tag :email, "¿Se hizo efectiva su fianza?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :health, 'Nombre o compañía afianzadora' %>
+
+    		Tiene usted...
+    		<p><%= label_tag :email, "¿Cuenta de Ahorros?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :health, 'Banco' %>
+
+    		<p><%= label_tag :email, "¿Cuenta de Cheques?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :health, 'Banco' %>
+
+    		<p><%= label_tag :email, "Tarjeta de crédito" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :health, 'Banco' %>
+
+    		<p><%= label_tag :email, "¿Otras cuentas bancarias?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :health, '¿Cuántas?' %>
+
+    		<p><%= label_tag :email, "¿Seguro de vida?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :health, 'Suma asegurada' %>
+    		<p><%= text_field_tag :health, 'Compañía aseguradora' %>
+
+    		<p><%= label_tag :email, "¿Seguro de gastos médicos?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :health, 'Compañía aseguradora' %>
+
+    	<div class="line-divider"></div>
+    	<h3>Datos familiares</h3>
+    		
+    		<p><strong>Padre</p></strong>
+    		<p><%= text_field_tag :health, 'Nombre' %>
+    		<p><%= text_field_tag :health, 'Domicilio' %>
+    		<p><%= label_tag :email, "¿Depende económicamente de usted?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><strong>Madre</p></strong>
+    		<p><%= text_field_tag :health, 'Nombre' %>
+    		<p><%= text_field_tag :health, 'Domicilio' %>
+    		<p><%= label_tag :email, "¿Depende económicamente de usted?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><strong>Hijo</p></strong>
+    		<p><%= text_field_tag :health, 'Nombre' %>
+    		<p><%= text_field_tag :health, 'Domicilio' %>
+    		<p><%= label_tag :email, "¿Depende económicamente de usted?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><strong>Otro</p></strong>
+    		<p><%= text_field_tag :health, 'Nombre' %>
+    		<p><%= text_field_tag :health, 'Domicilio' %>
+    		<p><%= text_field_tag :health, 'Parentesco' %>
+    		<p><%= label_tag :email, "¿Depende económicamente de usted?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><strong>Otro 2</p></strong>
+    		<p><%= text_field_tag :health, 'Nombre' %>
+    		<p><%= text_field_tag :health, 'Domicilio' %>
+    		<p><%= text_field_tag :health, 'Parentesco' %>
+    		<p><%= label_tag :email, "¿Depende económicamente de usted?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+
+    		<p><%= label_tag :email, "En caso de ser soltero, ¿vive con sus padres?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :health, '¿Dónde?' %>
+
+    	<div class="line-divider"></div>
+    	<h3>Experiencia laboral</h3>
+
+    		<p><strong>Datos de sus últimos tres empleos, del más reciente al más antiguo</p></strong>
+    		<p><strong>Trabajo 1</p></strong>
+    		<p><%= text_field_tag :health, 'Nombre del Patrón' %>
+    		<p><%= text_field_tag :health, 'Domicilio' %>
+    		<p><%= text_field_tag :health, 'Teléfono' %>
+    		<p><%= date_field_tag :health, 'Fecha de ingreso' %>
+    		<p><%= date_field_tag :health, 'Fecha de separación' %>
+    		<p><%= text_field_tag :health, 'Motivo' %>
+    		<p><%= text_field_tag :health, 'Puesto' %>
+    		<p><%= text_field_tag :health, 'Actividades principales' %>
+    		<p><%= text_field_tag :health, 'Sueldo inicial' %>
+    		<p><%= text_field_tag :health, 'Sueldo final' %>
+    		<p><strong>Trabajo 2</p></strong>
+    		<p><%= text_field_tag :health, 'Nombre del Patrón' %>
+    		<p><%= text_field_tag :health, 'Domicilio' %>
+    		<p><%= text_field_tag :health, 'Teléfono' %>
+    		<p><%= date_field_tag :health, 'Fecha de ingreso' %>
+    		<p><%= date_field_tag :health, 'Fecha de separación' %>
+    		<p><%= text_field_tag :health, 'Motivo' %>
+    		<p><%= text_field_tag :health, 'Puesto' %>
+    		<p><%= text_field_tag :health, 'Actividades principales' %>
+    		<p><%= text_field_tag :health, 'Sueldo inicial' %>
+    		<p><%= text_field_tag :health, 'Sueldo final' %>
+    		<p><strong>Trabajo 3</p></strong>
+    		<p><%= text_field_tag :health, 'Nombre del Patrón' %>
+    		<p><%= text_field_tag :health, 'Domicilio' %>
+    		<p><%= text_field_tag :health, 'Teléfono' %>
+    		<p><%= date_field_tag :health, 'Fecha de ingreso' %>
+    		<p><%= date_field_tag :health, 'Fecha de separación' %>
+    		<p><%= text_field_tag :health, 'Motivo' %>
+    		<p><%= text_field_tag :health, 'Puesto' %>
+    		<p><%= text_field_tag :health, 'Actividades principales' %>
+    		<p><%= text_field_tag :health, 'Sueldo inicial' %>
+    		<p><%= text_field_tag :health, 'Sueldo final' %>
+
+    	<div class="line-divider"></div>
+    	<h3>Datos adicionales</h3>
+
+    		<p><%= text_field_tag :health, 'Cursos recibidos' %>
+    		<p><%= text_field_tag :health, 'Conocimientos o habilidades' %>
+
+    	<div class="line-divider"></div>
+    	<h3>Pretenciones laborales</h3>
+    		<p><%= text_field_tag :health, 'Sueldo deseado' %>
+    		<p><%= text_field_tag :health, 'Puesto pretendido' %>
+
+    		<p><strong>Disponibilidad</strong></p>
+    		<p><%= label_field_tag :health, 'Horario a partir de' %>
+    		<p><%= date_field_tag :health %>
+    		<p><%= time_field_tag :health %>
+
+    		<p><%= label_field_tag :health, 'Disponibilidad para viajar' %>
+    		<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
 
 
 		<div class="line-divider"></div>
@@ -247,46 +389,7 @@
 </div>
 
 
-¿Ha sido afianzado? (SI/NO): NO Monto: $
-
-Nombre o Compañía Afianzadora: 
-
-¿Se hizo efectiva su fianza? (SI/NO): Motivo (especifique): 
-
-¿Tiene Usted?:
-
-¿Cuenta de ahorros? (SI/NO): Banco: 
-
-¿Cuenta de cheques? (SI/NO): Banco: 
-
-¿Tarjeta de crédito? (SI/NO): Banco: 
-
-¿Otras cuentas bancarias? (SI/NO): ¿Cuántas?: 
-
-¿Seguro de vida? (SI/NO): Suma Asegurada: $ 
-
-Compañía Aseguradora: 
-
-¿Seguro de gastos médicos? (SI/NO):
-
-Compañía Aseguradora:
-
-DATOS FAMILIARES:
-
-Nombre Parentesco Domicilio
-
-PADRE
-
-MADRE
-
-ESPOSO (A)
-
-HIJO
-
-Si es soltero(a), ¿vive con sus padres? (SI/NO): 
-
-¿Dónde?: 
-
+<!---
 ESCOLARIDAD
 
 Institución Entidad 
@@ -306,49 +409,4 @@ MEDIA SUPERIOR
 SUPERIOR
 
 OTRA(S)
-
-EXPERIENCIA LABORAL:
-
-(Datos de sus últimos tres empleos, del más reciente al más antigüo)
-
-Nombre del Patrón: 
-
-Domicilio: Teléfono: 
-
-Fechas de Ingreso: Separación: Motivo: Puesto: Principales Actividades (describa): 
-
-Sueldo Inicial: $ Sueldo Final: $ 
-
- Nombre del Patrón: 
-
-Domicilio: Teléfono: 
-
-Fechas de Ingreso: Separación: Motivo: Puesto: Principales Actividades (describa): 
-
-Sueldo Inicial: $ Sueldo Final: $ 
-
-Nombre del Patrón: 
-
-Domicilio: Teléfono: 
-
-Fechas de Ingreso: Separación: Motivo: Puesto: Principales Actividades (describa): 
-
-Sueldo Inicial: $ Sueldo Final: $ 
-
-DATOS ADICIONALES: (indicar entre otros: Cursos Recibidos y/o Impartidos, Conocimientos u Habilidades, 
-
-etc.): 
-
-PRETENSIONES LABORALES:
-
-Sueldo Deseado: $ _______________ Puesto Pretendido: ________________
-
-Disponibilidad:
-
-A partir de: ________________ Horario: __________________________
-
-¿Para Viajar? (SI/NO): ___________________________
-
-______________________________________
-
-Nombre, Firma y huella del trabajador
+-->
