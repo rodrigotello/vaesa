@@ -1,0 +1,354 @@
+<div class="container">
+	
+	<%= image_tag 'pdf.png' %>
+	<%= image_tag 'docx.png' %>
+	<h1>Forma para generar contratos</h1>
+	<p>Llena todos los campos para generar un documento:</p>
+	<%= form_tag('documents') do %>
+		
+		<div class="line-divider"></div>
+		<h3>Datos personales</h3>
+
+			<p><%= label_tag :name, "Primer Nombre" %>
+			<p><%= text_field_tag :name %>
+			
+			<p><%= label_tag :nameb, "Segundo nombre*" %>
+			<p><%= text_field_tag :nameb, 'Segundo nombre'  %>
+			
+			<p><%= label_tag :lastnamea, "Apellido materno" %>
+			<p><%= text_field_tag :lastnamea, 'Apellido paterno'  %>
+			
+			<p><%= label_tag :lastnameb, "Apellido paterno" %>
+			<p><%= text_field_tag :lastnameb, 'Apellido materno'  %>
+			
+			<p><%= label_tag :birthyear, "Fecha de nacimiento" %>
+			<p><%= date_field_tag :birthyear %>
+
+			<p><%= label_tag :nationality, "Nacionalidad" %>
+			<p><%= text_field_tag :nationality %>
+			
+			<p>Si la nacionalidad es Extranjera, dejar "Ciudad" y "Estado" vacios.</p>
+			<p><%= label_tag :city, "Ciudad de nacimiento" %>
+			<p><%= text_field_tag :city %>
+			
+			<p><%= label_tag :state, "Estado de nacimiento" %>
+			<p><%= text_field_tag :state, 'Estado' %>
+
+			<p><%= label_tag :sex, "Sexo" %>
+			<p><%= radio_button_tag :sex, 'masculino', :checked => true %> Masculino
+    		<p><%= radio_button_tag :sex, 'femenino' %> Femenino
+			
+			<p><%= label_tag :civicstatus, "Estado civil" %>
+			<p><%= radio_button_tag :civicstatus, 'soltero', :checked => true %> Soltero
+    		<p><%= radio_button_tag :civicstatus, 'casado' %> Casado
+    		<p><%= radio_button_tag :civicstatus, 'divorciado' %> Divorciado
+    		<p><%= radio_button_tag :civicstatus, 'viudo' %> Viudo
+
+			<p><%= label_tag :curp, "CURP" %>
+			<p><%= text_field_tag :curp, 'CURP'  %>
+			
+			<p><%= label_tag :rfc, "RFC" %>
+			<p><%= text_field_tag :rfc, 'RFC'  %>
+			
+			<p><%= label_tag :socialid, "Seguro social" %>
+			<p><%= text_field_tag :socialid, 'Seguro social'  %>
+
+			<p><%= label_tag :education, "Grado académico" %>
+			<p><%= radio_button_tag :education, 'ninguno', :checked => true %> Ninguno
+    		<p><%= radio_button_tag :education, 'secundaria' %> Primaria
+    		<p><%= radio_button_tag :education, 'preparatoria' %> Secundaria
+    		<p><%= radio_button_tag :education, 'licenciatura'  %> Bachillerato
+    		<p><%= radio_button_tag :education, 'maestría'%> Profesionista
+    		<p><%= radio_button_tag :education, 'doctorado' %> Posgrado
+			
+		<div class="line-divider"></div>
+		<h3>Datos laborales</h3>
+		
+			<p><%= label_tag :salarymode, "Forma de pago" %>
+			<p><%= radio_button_tag :salarymode, 'semanal', :checked => true %> Semanal
+    		<p><%= radio_button_tag :salarymode, 'catorcenal' %> Catorcenal
+    		<p><%= radio_button_tag :salarymode, 'quincenal' %> Quincenal
+    		<p><%= radio_button_tag :salarymode, 'mensual' %> Mensual
+			
+			<p><%= label_tag :startingdate, "Fecha de ingreso" %>
+			<p><%= date_field_tag :startingdate %>
+			
+			<p><%= label_tag :tasks, "Funciones a desempeñar" %>
+			<p><%= text_field_tag :tasks %>
+			
+		<div class="line-divider"></div>
+		<h3>Dirección</h3>
+
+			<p><%= label_tag :street, "Calle" %>
+			<p><%= text_field_tag :street %>
+			
+			<p><%= label_tag :number_ext, "Número Exterior" %>
+			<p><%= text_field_tag :number_ext %>
+			
+			<p><%= label_tag :number_int, "Número Interior" %>
+			<p><%= text_field_tag :number_int %>
+			
+			<p><%= label_tag :neighborhood, "Colonia" %>		
+			<p><%= text_field_tag :neighborhood %>
+			
+			<p><%= label_tag :zip, "Código Postal" %>
+			<p><%= text_field_tag :zip, 'Código Postal' %>
+
+		<div class="line-divider"></div>
+		<h3>Contacto</h3>
+
+			<p><%= label_tag :phone, "Teléfono" %>
+			<p><%= text_field_tag :phone %>
+			
+			<p><%= label_tag :email, "Correo electrónico" %>
+			<p><%= email_field_tag :email %>
+			
+			<p><%= label_tag :time_at_city, "Tiempo de radicar en la ciudad" %>
+			<p><%= text_field_tag :time_at_city %>
+
+		<div class="line-divider"></div>
+		<h3>Expediente</h3>
+
+			<p><%= label_tag :health, "Su salud la considera:" %>
+			<p><%= radio_button_tag :health, 'semanal', :checked => true %> Buena
+    		<p><%= radio_button_tag :health, 'catorcenal' %> Mala
+    		<p><%= radio_button_tag :health, 'quincenal' %> Regular
+			
+			<p><%= label_tag :healthp, "¿Padece de alguna enfermedad?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Si
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :time_at_city, '¿cual?' %>
+
+			
+			<p><%= label_tag :email, "¿Embarazada?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Si
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :time_at_city, '¿Desde cuándo?' %>
+
+    		<p><%= label_tag :email, "¿Tiene calidad de pensionado?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Si
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		
+    		<p><%= label_tag :email, "En caso afirmativo, señale origen y tipo de pensión:" %>
+    		<p><%= radio_button_tag :health, 'semanal', :checked => true %> IMSS
+    		<p><%= radio_button_tag :health, 'catorcenal' %> ISSSTE
+    		<p><%= radio_button_tag :health, 'quincenal' %> ISSFAM
+    		<p><%= radio_button_tag :health, 'quincenal' %> Otro
+
+    		<p><%= label_tag :email, "Tipo de pensión:" %>
+    		<p><%= radio_button_tag :health, 'semanal', :checked => true %> Invalidez
+    		<p><%= radio_button_tag :health, 'catorcenal' %> Riesgos de Trabajo
+    		<p><%= radio_button_tag :health, 'quincenal' %> Cesantía
+    		<p><%= radio_button_tag :health, 'quincenal' %> Vejez
+    		<p><%= radio_button_tag :health, 'quincenal' %> Años de servicio
+    		<p><%= radio_button_tag :health, 'quincenal' %> Edad
+    		<p><%= radio_button_tag :health, 'quincenal' %> Otra
+
+    		<p><strong>Vivienda</strong></p>
+    		<p><%= label_tag :email, "'¿Tiene usted crédito de vivienda?'" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Si
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= label_tag :email, "'En caso afirmativo, señale por favor el origen:'" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> INFONAVIT
+    		<p><%= radio_button_tag :health, 'quincenal' %> FOVISSTE
+    		<p><%= radio_button_tag :health, 'catorcenal' %> FOVISSFAM
+    		<p><%= radio_button_tag :health, 'quincenal' %> FINANCIERO
+    		<p><%= radio_button_tag :health, 'quincenal' %> Otro
+
+    		<p><strong>Empleo</strong></p>
+    		<p><%= label_tag :email, "'¿Tiene usted otro empleo?'" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		
+    		<p><%= label_tag :email, "'¿Tiene usted otros ingresos distintos a salarios?'" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+
+    		<p><%= label_tag :email, "'¿Va a presentar usted su declaración anual de ingresos?'" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+
+    		<p><%= label_tag :email, "'Nombre de la Afore que opera su cuenta individual:'" %>
+			<p><%= text_field_tag :health %>
+
+			<p><%= label_tag :email, "'Número de Afiliación del IMSS" %>
+			<p><%= text_field_tag :health %>
+
+			<p><%= label_tag :email, "Cédula Profesional No." %>
+			<p><%= text_field_tag :health %>
+
+			<p><%= label_tag :email, "Licencia de manejo" %>
+			<p><%= text_field_tag :health, 'número'%>
+			<p><%= text_field_tag :health, 'tipo' %>
+
+			<p><%= label_tag :email, "Pasaporte" %>
+			<p><%= text_field_tag :health, 'número'%>
+			<p><%= text_field_tag :health, 'tipo' %>
+
+			<p><%= label_tag :email, "Constancia de retenciones y percepciones del empleo inmediato anterior" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+
+    		<p><%= label_tag :email, "Cartilla militar No.: (señale)" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Cumpliendo servicio
+    		<p><%= radio_button_tag :health, 'quincenal' %> Liberada
+    		<p><%= radio_button_tag :health, 'quincenal' %> Exento
+    		<p><%= radio_button_tag :health, 'quincenal' %> Otro
+    			<%= text_field_tag :health, 'tipo' %>
+    		
+    		<p><%= label_tag :email, "Referencias personales:" %>
+			<p><strong>Referencia 1</strong>
+			<p><%= text_field_tag :health, 'Nombre'%>
+			<p><%= text_field_tag :health, 'Domicilio' %>
+			<p><%= text_field_tag :health, 'Teléfono' %>
+			<p><%= text_field_tag :health, 'Tiempo de conocerlo' %>
+			<p><strong>Referencia 1</strong>
+			<p><%= text_field_tag :health, 'Nombre'%>
+			<p><%= text_field_tag :health, 'Domicilio' %>
+			<p><%= text_field_tag :health, 'Teléfono' %>
+			<p><%= text_field_tag :health, 'Tiempo de conocerlo' %>
+			<p><strong>Referencia 1</strong>
+			<p><%= text_field_tag :health, 'Nombre'%>
+			<p><%= text_field_tag :health, 'Domicilio' %>
+			<p><%= text_field_tag :health, 'Teléfono' %>
+			<p><%= text_field_tag :health, 'Tiempo de conocerlo' %>
+
+		<div class="line-divider"></div>
+		<h3>Datos Económicos</h3>
+
+			<p><strong>Inmuebles</strong>
+    		<p><%= label_tag :email, "¿Posee bienes inmuebles?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :health, 'Valor aproximado' %>
+    		<p><%= text_field_tag :health, 'Ubicación' %>
+
+    		<p><strong>Auto</strong>
+    		<p><%= label_tag :email, "¿Posee automovil?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :health, 'Marca' %>
+    		<p><%= text_field_tag :health, 'Modelo' %>
+    		<p><%= text_field_tag :health, 'Valor' %>
+    		<p><%= radio_button_tag :health, 'catorcenal' %> Pagado totalmente
+    		<p><%= radio_button_tag :health, 'quincenal' %> Pagado parcialmente
+    		<p><%= text_field_tag :health, 'Otro (especifique):' %>
+
+    		<p><%= label_tag :email, "¿Tiene usted deudas pendientes?" %>
+			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :health, '¿De qué tipo?' %>
+
+
+
+		<div class="line-divider"></div>
+		<p><%= submit_tag "Crear documento", class: 'button-big' %>
+	<% end %>
+</div>
+
+
+¿Ha sido afianzado? (SI/NO): NO Monto: $
+
+Nombre o Compañía Afianzadora: 
+
+¿Se hizo efectiva su fianza? (SI/NO): Motivo (especifique): 
+
+¿Tiene Usted?:
+
+¿Cuenta de ahorros? (SI/NO): Banco: 
+
+¿Cuenta de cheques? (SI/NO): Banco: 
+
+¿Tarjeta de crédito? (SI/NO): Banco: 
+
+¿Otras cuentas bancarias? (SI/NO): ¿Cuántas?: 
+
+¿Seguro de vida? (SI/NO): Suma Asegurada: $ 
+
+Compañía Aseguradora: 
+
+¿Seguro de gastos médicos? (SI/NO):
+
+Compañía Aseguradora:
+
+DATOS FAMILIARES:
+
+Nombre Parentesco Domicilio
+
+PADRE
+
+MADRE
+
+ESPOSO (A)
+
+HIJO
+
+Si es soltero(a), ¿vive con sus padres? (SI/NO): 
+
+¿Dónde?: 
+
+ESCOLARIDAD
+
+Institución Entidad 
+
+Federativa
+
+Años 
+
+Cursados Certificado o Título
+
+PRIMARIA
+
+SECUNDARIA
+
+MEDIA SUPERIOR
+
+SUPERIOR
+
+OTRA(S)
+
+EXPERIENCIA LABORAL:
+
+(Datos de sus últimos tres empleos, del más reciente al más antigüo)
+
+Nombre del Patrón: 
+
+Domicilio: Teléfono: 
+
+Fechas de Ingreso: Separación: Motivo: Puesto: Principales Actividades (describa): 
+
+Sueldo Inicial: $ Sueldo Final: $ 
+
+ Nombre del Patrón: 
+
+Domicilio: Teléfono: 
+
+Fechas de Ingreso: Separación: Motivo: Puesto: Principales Actividades (describa): 
+
+Sueldo Inicial: $ Sueldo Final: $ 
+
+Nombre del Patrón: 
+
+Domicilio: Teléfono: 
+
+Fechas de Ingreso: Separación: Motivo: Puesto: Principales Actividades (describa): 
+
+Sueldo Inicial: $ Sueldo Final: $ 
+
+DATOS ADICIONALES: (indicar entre otros: Cursos Recibidos y/o Impartidos, Conocimientos u Habilidades, 
+
+etc.): 
+
+PRETENSIONES LABORALES:
+
+Sueldo Deseado: $ _______________ Puesto Pretendido: ________________
+
+Disponibilidad:
+
+A partir de: ________________ Horario: __________________________
+
+¿Para Viajar? (SI/NO): ___________________________
+
+______________________________________
+
+Nombre, Firma y huella del trabajador

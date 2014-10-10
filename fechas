@@ -1,0 +1,34 @@
+- Fecha de laborar: Restar 3 
+El contrato es la fecha de ingreso, la oferta es 3 días antes
+
+- En contrato se refleja en las dos. A veces puede ser la misma.
+
+- En expediente solo se refleja la firma del contrato.
+
+- @
+
+- Cambiar la @Fecha_de_Ingreso por @Fecha_de_Antiguedad_Real
+
+- Agregar @Fecha_de_Ingreso: A mano
+
+- Si tiene Buena salud, no llenar nada más...
+
+- @Fecha_de_Solicitud_de_Empleo es 3 DÍAS MENOS que la @Fecha_de_Ingreso
+
+- La @Fecha_de_Documentación lleva 3 días más, y se usa en aquellos documentos que NO DIGAN solicitud de empleo y registro de firmas y depósito
+
+- Los archivos de Solicitud de Empleo, usan @Fecha_de_Solicitud_de_empleo
+
+- El archivo Registro de firmas y depósito usa @Fecha_de_Ingreso
+
++ Agregar campos de Pensión
+
+- "Autorización de descuentos y aportaciones a cajas de ahorro" en blanco
+
+- Número de Crédito de Vivienda
+
+- Agregar campos de contrato
+
+=================
+
+- Subir el Indeterminado de Vaesa

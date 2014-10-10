@@ -1,0 +1,30 @@
+// Place all the styles related to the Documents controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+input[type=submit].button-big {
+	color: white;
+	text-decoration:none;
+	background:#333332;
+	padding: 2em 6em;
+	border-radius: 3px;
+	margin-top: 500;
+	border: none;
+	&:hover {
+		background: gray;
+	}
+}
+
+input[type=text], input[type=date], input[type=email] {
+	padding:5px;
+	border:2px solid #ccc; 
+	-webkit-border-radius: 3px;
+	border-radius: 5px;
+	padding: 1em 2em;
+	width: 25%;
+	color: gray;
+}
+
+input[type=text], input[type=date], input[type=email] {
+	-webkit-border-radius: #ccc;
+}

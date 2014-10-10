@@ -11,3 +11,15 @@
  *= require_self
  *= require_tree .
  */
+
+html, body {
+	margin: 0 0 0 0; 
+}
+
+body {
+	min-height: 100vh;
+}
+
+.main-container {
+	min-height: 100vh;
+}

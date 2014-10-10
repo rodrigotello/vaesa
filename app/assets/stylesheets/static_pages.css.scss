@@ -1,0 +1,95 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+p, h1, h2, h3, h4, h5, h6, a, li, ul, small, body{
+	font-family: 'Open Sans', sans-serif;
+	color: #333332;
+}
+
+a {
+	text-decoration: none;
+}
+
+.nav-bar {
+	background: whitesmoke;
+	padding: 4em 0 4em 0;
+}
+
+.nav-bar ul{
+  list-style: none;
+}
+
+.nav-bar li{
+  display: inline;
+}
+
+.footer {
+	background: whitesmoke;
+	padding: 10em 1em;
+	text-align: center;
+}
+
+.footer-company, .footer-dev-firm {
+	color: gray;
+}
+
+a.button-big {
+	color: white;
+	text-decoration:none;
+	background:#333332;
+	padding:1em 4em;
+	border-radius: 100px;
+	margin-top: 500;
+}
+
+
+
+.container {
+	max-width: 75vw;
+	margin: 0 auto;
+}
+
+.contract-box {
+	margin: 0 0 12em 0;
+	padding: 1em;
+}
+
+.home-folding-wrapper {
+	text-align: center;
+	padding: 4em;
+}
+
+.icon-box {
+	float: left;
+	display: inline;
+	margin: 0 40px 0 0;
+}
+
+.pdf-icon {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	background: #ff3333;
+	width: 85px;
+	text-align: center;
+	padding: 45px 0;
+}
+
+.word-icon {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	background: #0080ff;
+	width: 85px;
+	text-align: center;
+	padding: 45px 0;
+}
+
+.line-divider {
+	border-top: 1px lightgray solid;
+	margin: 100px auto;
+	width: 50%
+}
+
+img.image-styler {
+	max-width: 20%;
+}

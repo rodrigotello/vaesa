@@ -2,13 +2,18 @@
 <html>
 <head>
   <title>Vaesa</title>
+  <!--Assets-->
+  	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+  <!--Assets: closing-->
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<%= render 'layouts/header' %>
+	<div class="main-container">
+    <%= yield %>
+  </div>
+	<%= render 'layouts/footer' %>
 </body>
 </html>

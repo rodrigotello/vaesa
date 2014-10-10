@@ -43,6 +43,9 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     diff-lcs (1.2.5)
+    docx (0.2.03)
+      nokogiri (~> 1.5)
+      rubyzip (~> 0.9)
     erubis (2.7.0)
     execjs (2.2.1)
     ffi (1.9.3)
@@ -147,6 +150,7 @@ PLATFORMS
 DEPENDENCIES
   capybara (= 2.1.0)
   coffee-rails (= 4.0.1)
+  docx
   jbuilder (= 1.0.2)
   jquery-rails (= 3.0.4)
   pg (= 0.15.1)
