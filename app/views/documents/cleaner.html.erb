@@ -1,0 +1,8 @@
+<div class="container">
+	<h2>Limpiador</h2>
+	<p>
+		Esta página está hecha para limpiar todos los archivos dentro de la aplicación. Es recomendable limpiarlo cada semana, con el fin de mantener la aplicación con velocidad.
+		Esta página tiene <strong> <%= @documents_quantity %> archivos </strong>
+		<div><%= link_to 'Borrar archivos viejos', clean_path, class: 'cleaner-button' %></div>
+	</p>
+</div>

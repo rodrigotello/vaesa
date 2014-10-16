@@ -8,7 +8,8 @@ class StaticPagesController < ApplicationController
   end
 
   def contracts
-  	render plain: "I'm only accessible if you know the password"
+  	# render plain: "I'm only accessible if you know the password"
+  	@name = params[:name]
   end
 end
 

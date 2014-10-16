@@ -46,6 +46,15 @@ a.button-big {
 	border-radius: 100px;
 }
 
+a.cleaner-button {
+	color: white;
+	background: tomato;
+	padding: 1em 4em;
+	border-radius: 3px;
+	position: absolute;
+	margin: 0 auto;
+}
+
 .container {
 	max-width: 75vw;
 	margin: 0 auto;

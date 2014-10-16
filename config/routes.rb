@@ -5,7 +5,6 @@ Vaesa::Application.routes.draw do
   match "/new", to: 'documents#new', via: 'get'
 
   match '/help', to: 'static_pages#help', via: 'get'
-  
   match '/contracts', to: 'static_pages#contracts', via: 'get'
 
   #get 'documents' => 'documents#convert'
@@ -13,6 +12,9 @@ Vaesa::Application.routes.draw do
   #but it was the only method.
 
   match '/documents', to: 'documents#convert', via: 'post'
+
+  match '/cleaner', to: 'documents#cleaner', via: 'get'
+  get 'clean' => 'documents#clean'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
