@@ -1,0 +1,175 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+html, body {
+	margin: 0 0 0 0; 
+}
+
+body {
+	min-height: 100vh;
+}
+
+.main-container {
+	min-height: 100vh;
+}
+/* line 5, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/documents.css.scss */
+input[type=submit].button-big {
+  color: white;
+  text-decoration: none;
+  background: #333332;
+  padding: 2em 6em;
+  border-radius: 3px;
+  margin-top: 500;
+  border: none;
+}
+/* line 13, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/documents.css.scss */
+input[type=submit].button-big:hover {
+  background: gray;
+}
+
+/* line 18, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/documents.css.scss */
+input[type=text], input[type=date], input[type=email] {
+  padding: 5px;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 3px;
+  border-radius: 5px;
+  padding: 1em 2em;
+  width: 25%;
+  color: gray;
+}
+
+/* line 28, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/documents.css.scss */
+input[type=text], input[type=date], input[type=email] {
+  -webkit-border-radius: #ccc;
+}
+/* line 5, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+p, h1, h2, h3, h4, h5, h6, a, li, ul, small, body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333332;
+}
+
+/* line 10, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 14, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+.nav-bar {
+  background: whitesmoke;
+  padding: 4em 0 4em 0;
+}
+
+/* line 19, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+.nav-bar h3 {
+  display: inline;
+}
+
+/* line 23, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+.nav-bar a {
+  float: right;
+  margin: 0 2em;
+}
+/* line 26, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+.nav-bar a:hover {
+  color: gray;
+}
+
+/* line 31, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+.footer {
+  background: whitesmoke;
+  padding: 10em 1em;
+  text-align: center;
+}
+
+/* line 37, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+.footer-company, .footer-dev-firm {
+  color: gray;
+}
+
+/* line 41, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+a.button-big {
+  color: white;
+  text-decoration: none;
+  background: #333332;
+  padding: 1em 4em;
+  border-radius: 100px;
+}
+
+/* line 49, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+a.cleaner-button {
+  color: white;
+  background: tomato;
+  padding: 1em 4em;
+  border-radius: 3px;
+  position: absolute;
+  margin: 0 auto;
+}
+
+/* line 58, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+.container {
+  max-width: 75vw;
+  margin: 0 auto;
+}
+
+/* line 63, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+.contract-box {
+  margin: 0 0 12em 0;
+  padding: 1em;
+}
+
+/* line 68, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+.home-folding-wrapper, .company-name-box, .center-folding-wrapper {
+  text-align: center;
+  padding: 4em;
+}
+
+/* line 73, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+.icon-box {
+  float: left;
+  display: inline;
+  margin: 0 40px 0 0;
+}
+
+/* line 79, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+.pdf-icon {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background: #ff3333;
+  width: 85px;
+  text-align: center;
+  padding: 45px 0;
+}
+
+/* line 88, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+.word-icon {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background: #0080ff;
+  width: 85px;
+  text-align: center;
+  padding: 45px 0;
+}
+
+/* line 97, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+.line-divider {
+  border-top: 1px lightgray solid;
+  margin: 100px auto;
+  width: 50%;
+}
+
+/* line 103, /home/rodrigo/Apps/vaesa/app/assets/stylesheets/static_pages.css.scss */
+img.image-styler {
+  max-width: 25%;
+}

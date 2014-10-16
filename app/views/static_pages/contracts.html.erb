@@ -1,61 +1,208 @@
 <div class="container">
-	<h1>Lista de Contratos</h1>
-	<p>Aquí la lista de contratos</p>
+	<div class="center-folding-wrapper">
+		<h1>Lista de Contratos</h1>
+		<p>Aquí la lista de contratos</p>
+	</div>
+
+
+
+
+
+
+
 	
-	<h23>Vaesa</h2>
-	<%= image_tag 'vaesa_logo.jpg', class: 'image-styler' %>
-	<div class="contract-box">
-		<h3>Contrato 1</h3>
-		<p>Aquí va la breve descripción del contrato</p>
-		<div class="icon-box">
-			<%= image_tag 'pdf.png' %>
-			<p><a href="#">Descargar<a/>
-		</div>
-		<div class="icon-box">
-			<%= image_tag 'docx.png' %>
-			<p><a href="#">Desargar<a/>	
-		</div>
+	<div class="company-name-box">
+		<h2>Vaesa</h2>
+		<%= image_tag 'vaesa_logo.jpg', class: 'image-styler' %>
 	</div>
-	<div class="contract-box">
-		<h3>Contrato 2</h3>
-		<p>Aquí va la breve descripción del contrato</p>
-		<div class="icon-box">
-			<%= image_tag 'pdf.png' %>
-			<p><a href="#">Desargar<a/>
+		<div class="contract-box">
+			<h3>Vaesa Contrato Individual Indeterminado</h3>
+				<p>Aquí va la breve descripción del contrato</p>
+				<div class="icon-box">
+					<%= image_tag 'pdf.png' %>
+					<p><a href="#">Descargar<a/>
+				</div>
+				<div class="icon-box">
+					<%= image_tag 'docx.png' %>
+					<p><%= link_to 'Descargar', download_path(doc: 1, name: @name)%>	
+				</div>
 		</div>
-		<div class="icon-box">
-			<%= image_tag 'docx.png' %>
-			<p><a href="#">Desargar<a/>	
+		<div class="contract-box">
+			<h3>Vaesa Contrato Individual Capacitación</h3>
+				<p>Aquí va la breve descripción del contrato</p>
+				<div class="icon-box">
+					<%= image_tag 'pdf.png' %>
+					<p><a href="#">Descargar<a/>
+				</div>
+				<div class="icon-box">
+					<%= image_tag 'docx.png' %>
+					<p><a href="#">Descargar<a/>	
+				</div>
 		</div>
-	</div>
+		<div class="contract-box">
+			<h3>Vaesa Contrato Individual Determinado</h3>
+				<p>Aquí va la breve descripción del contrato</p>
+				<div class="icon-box">
+					<%= image_tag 'pdf.png' %>
+					<p><a href="#">Descargar<a/>
+				</div>
+				<div class="icon-box">
+					<%= image_tag 'docx.png' %>
+					<p><a href="#">Descargar<a/>	
+				</div>
+		</div>
+		<div class="contract-box">
+			<h3>Vaesa Contrato Individual Obra Determinada</h3>
+				<p>Aquí va la breve descripción del contrato</p>
+				<div class="icon-box">
+					<%= image_tag 'pdf.png' %>
+					<p><a href="#">Descargar<a/>
+				</div>
+				<div class="icon-box">
+					<%= image_tag 'docx.png' %>
+					<p><a href="#">Descargar<a/>	
+				</div>
+		</div>
+		<div class="contract-box">
+			<h3>Vaesa Contrato Individual Prueba</h3>
+				<p>Aquí va la breve descripción del contrato</p>
+				<div class="icon-box">
+					<%= image_tag 'pdf.png' %>
+					<p><a href="#">Descargar<a/>
+				</div>
+				<div class="icon-box">
+					<%= image_tag 'docx.png' %>
+					<p><a href="#">Descargar<a/>	
+				</div>
+		</div>
+		<div class="contract-box">
+			<h3>Vaesa Contrato Individual Temporada</h3>
+				<p>Aquí va la breve descripción del contrato</p>
+				<div class="icon-box">
+					<%= image_tag 'pdf.png' %>
+					<p><a href="#">Descargar<a/>
+				</div>
+				<div class="icon-box">
+					<%= image_tag 'docx.png' %>
+					<p><a href="#">Descargar<a/>	
+				</div>
+		</div>
+		<div class="contract-box">
+			<h3>Vaesa Formato de Solicitud de Empleo</h3>
+				<p>Aquí va la breve descripción del contrato</p>
+				<div class="icon-box">
+					<%= image_tag 'pdf.png' %>
+					<p><a href="#">Descargar<a/>
+				</div>
+				<div class="icon-box">
+					<%= image_tag 'docx.png' %>
+					<p><a href="#">Descargar<a/>	
+				</div>
+		</div>
+		<div class="contract-box">
+			<h3>Vaesa Anexo Formato de Solicitud de Empleo</h3>
+				<p>Aquí va la breve descripción del contrato</p>
+				<div class="icon-box">
+					<%= image_tag 'pdf.png' %>
+					<p><a href="#">Descargar<a/>
+				</div>
+				<div class="icon-box">
+					<%= image_tag 'docx.png' %>
+					<p><a href="#">Descargar<a/>	
+				</div>
+		</div>
+		<div class="contract-box">
+			<h3>Vaesa Formato de Notificación y Designación Beneficiarios</h3>
+				<p>Aquí va la breve descripción del contrato</p>
+				<div class="icon-box">
+					<%= image_tag 'pdf.png' %>
+					<p><a href="#">Descargar<a/>
+				</div>
+				<div class="icon-box">
+					<%= image_tag 'docx.png' %>
+					<p><a href="#">Descargar<a/>	
+				</div>
+		</div>
+		<div class="contract-box">
+			<h3>Vaesa Formato de Registro de Firmas y Deposito en Cuenta</h3>
+				<p>Aquí va la breve descripción del contrato</p>
+				<div class="icon-box">
+					<%= image_tag 'pdf.png' %>
+					<p><a href="#">Descargar<a/>
+				</div>
+				<div class="icon-box">
+					<%= image_tag 'docx.png' %>
+					<p><a href="#">Descargar<a/>	
+				</div>
+		</div>
+		<div class="contract-box">
+			<h3>Vaesa Formato de Solicitud de Apertura de Cuenta Bancaria</h3>
+				<p>Aquí va la breve descripción del contrato</p>
+				<div class="icon-box">
+					<%= image_tag 'pdf.png' %>
+					<p><a href="#">Descargar<a/>
+				</div>
+				<div class="icon-box">
+					<%= image_tag 'docx.png' %>
+					<p><a href="#">Descargar<a/>	
+				</div>
+		</div>
+		<div class="contract-box">
+			<h3>Vaesa Formato Estudio Socioeconómico</h3>
+				<p>Aquí va la breve descripción del contrato</p>
+				<div class="icon-box">
+					<%= image_tag 'pdf.png' %>
+					<p><a href="#">Descargar<a/>
+				</div>
+				<div class="icon-box">
+					<%= image_tag 'docx.png' %>
+					<p><a href="#">Descargar<a/>	
+				</div>
+		</div>
+		<div class="contract-box">
+			<h3>Vaesa Renuncia Voluntaria</h3>
+				<p>Aquí va la breve descripción del contrato</p>
+				<div class="icon-box">
+					<%= image_tag 'pdf.png' %>
+					<p><a href="#">Descargar<a/>
+				</div>
+				<div class="icon-box">
+					<%= image_tag 'docx.png' %>
+					<p><a href="#">Descargar<a/>	
+				</div>
+		</div>
 	
 	<div class="line-divider"></div>
 
-	<h2>Dream</h2>
-	<%= image_tag 'dream_logo.jpg', class: 'image-styler' %>
+	<div class="company-name-box">
+		<h2>Dream</h2>
+		<h3>(Aun no disponibles)</h3>
+		<%= image_tag 'dream_logo.jpg', class: 'image-styler' %>
+	</div>
 
-	<div class="contract-box">
-		<h3>Contrato 3</h3>
-		<p>Aquí va la breve descripción del contrato</p>
-		<div class="icon-box">
-			<%= image_tag 'pdf.png' %>
-			<p><a href="#">Desargar<a/>
+		<div class="contract-box">
+			<h3>Contrato 3</h3>
+			<p>Aquí va la breve descripción del contrato</p>
+			<div class="icon-box">
+				<%= image_tag 'pdf.png' %>
+				<p><a href="#">Descargar<a/>
+			</div>
+			<div class="icon-box">
+				<%= image_tag 'docx.png' %>
+				<p><a href="#">Descargar<a/>	
+			</div>
 		</div>
-		<div class="icon-box">
-			<%= image_tag 'docx.png' %>
-			<p><a href="#">Desargar<a/>	
+		<div class="contract-box">
+			<h3>Contrato 4</h3>
+			<p>Aquí va la breve descripción del contrato</p>
+			<div class="icon-box">
+				<%= image_tag 'pdf.png' %>
+				<p><a href="#">Descargar<a/>
+			</div>
+			<div class="icon-box">
+				<%= image_tag 'docx.png' %>
+				<p><a href="#">Descargar<a/>	
+			</div>
 		</div>
-	</div>
-	<div class="contract-box">
-		<h3>Contrato 4</h3>
-		<p>Aquí va la breve descripción del contrato</p>
-		<div class="icon-box">
-			<%= image_tag 'pdf.png' %>
-			<p><a href="#">Desargar<a/>
-		</div>
-		<div class="icon-box">
-			<%= image_tag 'docx.png' %>
-			<p><a href="#">Desargar<a/>	
-		</div>
-	</div>
 </div>
+

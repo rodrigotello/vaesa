@@ -16,6 +16,8 @@ Vaesa::Application.routes.draw do
   match '/cleaner', to: 'documents#cleaner', via: 'get'
   get 'clean' => 'documents#clean'
 
+  get 'download' => 'documents#download'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

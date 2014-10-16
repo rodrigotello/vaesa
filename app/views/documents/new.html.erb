@@ -10,11 +10,11 @@
 		<div class="line-divider"></div>
 		<h3>Datos personales</h3>
 
-			<p><%= label_tag :name, "Primer Nombre" %>
-			<p><%= text_field_tag :name %>
+			<p><%= label_tag :name_first, "Primer Nombre" %>
+			<p><%= text_field_tag :name_first %>
 			
-			<p><%= label_tag :nameb, "Segundo nombre*" %>
-			<p><%= text_field_tag :nameb, 'Segundo nombre'  %>
+			<p><%= label_tag :name_second, "Segundo nombre (opcional)" %>
+			<p><%= text_field_tag :name_second, 'Segundo nombre'  %>
 			
 			<p><%= label_tag :lastnamea, "Apellido materno" %>
 			<p><%= text_field_tag :lastnamea, 'Apellido paterno'  %>
@@ -115,272 +115,272 @@
     		<p><%= radio_button_tag :health, 'catorcenal' %> Mala
     		<p><%= radio_button_tag :health, 'quincenal' %> Regular
 			
-			<p><%= label_tag :healthp, "¿Padece de alguna enfermedad?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Si
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
-    		<p><%= text_field_tag :time_at_city, '¿cual?' %>
+			<p><%= label_tag :health, "¿Padece de alguna enfermedad?" %>
+			<p><%= radio_button_tag :health_disease, 'catorcenal' %> Si
+    		<p><%= radio_button_tag :health_disease, 'quincenal' %> No
+    		<p><%= text_field_tag :health_disease_description, '¿cual?' %>
 
 			
-			<p><%= label_tag :email, "¿Embarazada?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Si
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
-    		<p><%= text_field_tag :time_at_city, '¿Desde cuándo?' %>
+			<p><%= label_tag :pregnancy, "¿Embarazada?" %>
+			<p><%= radio_button_tag :pregnancy, 'catorcenal' %> Si
+    		<p><%= radio_button_tag :pregnancy, 'quincenal' %> No
+    		<p><%= text_field_tag :pregnancy_data, '¿Desde cuándo?' %>
 
-    		<p><%= label_tag :email, "¿Tiene calidad de pensionado?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Si
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= label_tag :retirement, "¿Tiene calidad de pensionado?" %>
+			<p><%= radio_button_tag :retirement, 'catorcenal' %> Si
+    		<p><%= radio_button_tag :retirement, 'quincenal' %> No
     		
-    		<p><%= label_tag :email, "En caso afirmativo, señale origen y tipo de pensión:" %>
-    		<p><%= radio_button_tag :health, 'semanal', :checked => true %> IMSS
-    		<p><%= radio_button_tag :health, 'catorcenal' %> ISSSTE
-    		<p><%= radio_button_tag :health, 'quincenal' %> ISSFAM
-    		<p><%= radio_button_tag :health, 'quincenal' %> Otro
+    		<p><%= label_tag :retirement_type, "En caso afirmativo, señale origen y tipo de pensión:" %>
+    		<p><%= radio_button_tag :retirement_type, 'semanal', :checked => true %> IMSS
+    		<p><%= radio_button_tag :retirement_type, 'catorcenal' %> ISSSTE
+    		<p><%= radio_button_tag :retirement_type, 'quincenal' %> ISSFAM
+    		<p><%= radio_button_tag :retirement_type, 'quincenal' %> Otro
 
-    		<p><%= label_tag :email, "Tipo de pensión:" %>
-    		<p><%= radio_button_tag :health, 'semanal', :checked => true %> Invalidez
-    		<p><%= radio_button_tag :health, 'catorcenal' %> Riesgos de Trabajo
-    		<p><%= radio_button_tag :health, 'quincenal' %> Cesantía
-    		<p><%= radio_button_tag :health, 'quincenal' %> Vejez
-    		<p><%= radio_button_tag :health, 'quincenal' %> Años de servicio
-    		<p><%= radio_button_tag :health, 'quincenal' %> Edad
-    		<p><%= radio_button_tag :health, 'quincenal' %> Otra
+    		<p><%= label_tag :retirement_cause, "Tipo de pensión:" %>
+    		<p><%= radio_button_tag :retirement_cause, 'semanal', :checked => true %> Invalidez
+    		<p><%= radio_button_tag :retirement_cause, 'catorcenal' %> Riesgos de Trabajo
+    		<p><%= radio_button_tag :retirement_cause, 'quincenal' %> Cesantía
+    		<p><%= radio_button_tag :retirement_cause, 'quincenal' %> Vejez
+    		<p><%= radio_button_tag :retirement_cause, 'quincenal' %> Años de servicio
+    		<p><%= radio_button_tag :retirement_cause, 'quincenal' %> Edad
+    		<p><%= radio_button_tag :retirement_cause, 'quincenal' %> Otra
 
     		<p><strong>Vivienda</strong></p>
-    		<p><%= label_tag :email, "'¿Tiene usted crédito de vivienda?'" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Si
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
-    		<p><%= label_tag :email, "'En caso afirmativo, señale por favor el origen:'" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> INFONAVIT
-    		<p><%= radio_button_tag :health, 'quincenal' %> FOVISSTE
-    		<p><%= radio_button_tag :health, 'catorcenal' %> FOVISSFAM
-    		<p><%= radio_button_tag :health, 'quincenal' %> FINANCIERO
-    		<p><%= radio_button_tag :health, 'quincenal' %> Otro
+    		<p><%= label_tag :house_credit, "'¿Tiene usted crédito de vivienda?'" %>
+			<p><%= radio_button_tag :house_credit, 'catorcenal' %> Si
+    		<p><%= radio_button_tag :house_credit, 'quincenal' %> No
+    		<p><%= label_tag :house_credit_type, "'En caso afirmativo, señale por favor el origen:'" %>
+			<p><%= radio_button_tag :house_credit_type, 'catorcenal' %> INFONAVIT
+    		<p><%= radio_button_tag :house_credit_type, 'quincenal' %> FOVISSTE
+    		<p><%= radio_button_tag :house_credit_type, 'catorcenal' %> FOVISSFAM
+    		<p><%= radio_button_tag :house_credit_type, 'quincenal' %> FINANCIERO
+    		<p><%= radio_button_tag :house_credit_type, 'quincenal' %> Otro
 
     		<p><strong>Empleo</strong></p>
-    		<p><%= label_tag :email, "'¿Tiene usted otro empleo?'" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= label_tag :job_secondary, "'¿Tiene usted otro empleo?'" %>
+			<p><%= radio_button_tag :job_secondary, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :job_secondary, 'quincenal' %> No
     		
-    		<p><%= label_tag :email, "'¿Tiene usted otros ingresos distintos a salarios?'" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= label_tag :salary_secondary, "'¿Tiene usted otros ingresos distintos a salarios?'" %>
+			<p><%= radio_button_tag :salary_secondary, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :salary_secondary, 'quincenal' %> No
 
-    		<p><%= label_tag :email, "'¿Va a presentar usted su declaración anual de ingresos?'" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= label_tag :taxes_declaration, "'¿Va a presentar usted su declaración anual de ingresos?'" %>
+			<p><%= radio_button_tag :taxes_declaration, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :taxes_declaration, 'quincenal' %> No
 
-    		<p><%= label_tag :email, "'Nombre de la Afore que opera su cuenta individual:'" %>
-			<p><%= text_field_tag :health %>
+    		<p><%= label_tag :afore, "'Nombre de la Afore que opera su cuenta individual:'" %>
+			<p><%= text_field_tag :afore %>
 
-			<p><%= label_tag :email, "'Número de Afiliación del IMSS" %>
-			<p><%= text_field_tag :health %>
+			<p><%= label_tag :imss_number, "'Número de Afiliación del IMSS" %>
+			<p><%= text_field_tag :imss_number %>
 
-			<p><%= label_tag :email, "Cédula Profesional No." %>
-			<p><%= text_field_tag :health %>
+			<p><%= label_tag :profession_id, "Cédula Profesional No." %>
+			<p><%= text_field_tag :profession_id %>
 
-			<p><%= label_tag :email, "Licencia de manejo" %>
-			<p><%= text_field_tag :health, 'número'%>
-			<p><%= text_field_tag :health, 'tipo' %>
+			<p><%= label_tag :driver_license_id, "Licencia de manejo" %>
+			<p><%= text_field_tag :driver_license_id, 'número'%>
+			<p><%= text_field_tag :driver_license_type, 'tipo' %>
 
-			<p><%= label_tag :email, "Pasaporte" %>
-			<p><%= text_field_tag :health, 'número'%>
-			<p><%= text_field_tag :health, 'tipo' %>
+			<p><%= label_tag :passport, "Pasaporte" %>
+			<p><%= text_field_tag :passport_id, 'número'%>
+			<p><%= text_field_tag :passport_type, 'tipo' %>
 
-			<p><%= label_tag :email, "Constancia de retenciones y percepciones del empleo inmediato anterior" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
+			<p><%= label_tag :job_additional_a, "Constancia de retenciones y percepciones del empleo inmediato anterior" %>
+			<p><%= radio_button_tag :job_additional_a, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :job_additional_a, 'quincenal' %> No
 
-    		<p><%= label_tag :email, "Cartilla militar No.: (señale)" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Cumpliendo servicio
-    		<p><%= radio_button_tag :health, 'quincenal' %> Liberada
-    		<p><%= radio_button_tag :health, 'quincenal' %> Exento
-    		<p><%= radio_button_tag :health, 'quincenal' %> Otro
-    			<%= text_field_tag :health, 'tipo' %>
+    		<p><%= label_tag :military_id_status, "Cartilla militar No.: (señale)" %>
+			<p><%= radio_button_tag :military_id_status, 'catorcenal' %> Cumpliendo servicio
+    		<p><%= radio_button_tag :military_id_status, 'quincenal' %> Liberada
+    		<p><%= radio_button_tag :military_id_status, 'quincenal' %> Exento
+    		<p><%= radio_button_tag :military_id_status, 'quincenal' %> Otro
+    			<%= text_field_tag :military_id_status_other, 'tipo' %>
     		
-    		<p><%= label_tag :email, "Referencias personales:" %>
+    		<p><%= label_tag :personal_reference, "Referencias personales:" %>
 			<p><strong>Referencia 1</strong>
-			<p><%= text_field_tag :health, 'Nombre'%>
-			<p><%= text_field_tag :health, 'Domicilio' %>
-			<p><%= text_field_tag :health, 'Teléfono' %>
-			<p><%= text_field_tag :health, 'Tiempo de conocerlo' %>
+			<p><%= text_field_tag :personal_reference_1_name, 'Nombre'%>
+			<p><%= text_field_tag :personal_reference_1_address, 'Domicilio' %>
+			<p><%= text_field_tag :personal_reference_1_phone, 'Teléfono' %>
+			<p><%= text_field_tag :personal_reference_1_relationship, 'Tiempo de conocerlo' %>
 			<p><strong>Referencia 1</strong>
-			<p><%= text_field_tag :health, 'Nombre'%>
-			<p><%= text_field_tag :health, 'Domicilio' %>
-			<p><%= text_field_tag :health, 'Teléfono' %>
-			<p><%= text_field_tag :health, 'Tiempo de conocerlo' %>
+			<p><%= text_field_tag :personal_reference_2_name, 'Nombre'%>
+			<p><%= text_field_tag :personal_reference_2_address, 'Domicilio' %>
+			<p><%= text_field_tag :personal_reference_2_phone, 'Teléfono' %>
+			<p><%= text_field_tag :personal_reference_2_relationship, 'Tiempo de conocerlo' %>
 			<p><strong>Referencia 1</strong>
-			<p><%= text_field_tag :health, 'Nombre'%>
-			<p><%= text_field_tag :health, 'Domicilio' %>
-			<p><%= text_field_tag :health, 'Teléfono' %>
-			<p><%= text_field_tag :health, 'Tiempo de conocerlo' %>
+			<p><%= text_field_tag :personal_reference_3_name, 'Nombre'%>
+			<p><%= text_field_tag :personal_reference_3_address, 'Domicilio' %>
+			<p><%= text_field_tag :personal_reference_3_phone, 'Teléfono' %>
+			<p><%= text_field_tag :personal_reference_3_relationship, 'Tiempo de conocerlo' %>
 
 		<div class="line-divider"></div>
 		<h3>Datos Económicos</h3>
 
 			<p><strong>Inmuebles</strong>
-    		<p><%= label_tag :email, "¿Posee bienes inmuebles?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
-    		<p><%= text_field_tag :health, 'Valor aproximado' %>
-    		<p><%= text_field_tag :health, 'Ubicación' %>
+    		<p><%= label_tag :real_state, "¿Posee bienes inmuebles?" %>
+			<p><%= radio_button_tag :real_state_own, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :real_state_own, 'quincenal' %> No
+    		<p><%= text_field_tag :real_state_value, 'Valor aproximado' %>
+    		<p><%= text_field_tag :real_state_location, 'Ubicación' %>
 
     		<p><strong>Auto</strong>
-    		<p><%= label_tag :email, "¿Posee automovil?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
-    		<p><%= text_field_tag :health, 'Marca' %>
-    		<p><%= text_field_tag :health, 'Modelo' %>
-    		<p><%= text_field_tag :health, 'Valor' %>
-    		<p><%= radio_button_tag :health, 'catorcenal' %> Pagado totalmente
-    		<p><%= radio_button_tag :health, 'quincenal' %> Pagado parcialmente
-    		<p><%= text_field_tag :health, 'Otro (especifique):' %>
+    		<p><%= label_tag :car_status, "¿Posee automovil?" %>
+			<p><%= radio_button_tag :car_own, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :car_own, 'quincenal' %> No
+    		<p><%= text_field_tag :car_brand, 'Marca' %>
+    		<p><%= text_field_tag :car_model, 'Modelo' %>
+    		<p><%= text_field_tag :car_value, 'Valor' %>
+    		<p><%= radio_button_tag :car_payment_status, 'catorcenal' %> Pagado totalmente
+    		<p><%= radio_button_tag :car_payment_status, 'quincenal' %> Pagado parcialmente
+    		<p><%= text_field_tag :car_payment_status_other, 'Otro (especifique):' %>
 
-    		<p><%= label_tag :email, "¿Tiene usted deudas pendientes?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
-    		<p><%= text_field_tag :health, '¿De qué tipo?' %>
+    		<p><%= label_tag :debts, "¿Tiene usted deudas pendientes?" %>
+			<p><%= radio_button_tag :debts, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :debts, 'quincenal' %> No
+    		<p><%= text_field_tag :debts_type, '¿De qué tipo?' %>
 
-    		<p><%= label_tag :email, "¿Ha sido afianzado?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
-    		<p><%= text_field_tag :health, 'Monto' %>
-    		<p><%= text_field_tag :health, 'Nombre o compañía afianzadora' %>
+    		<p><%= label_tag :deposit, "¿Ha sido afianzado?" %>
+			<p><%= radio_button_tag :deposit, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :deposit, 'quincenal' %> No
+    		<p><%= text_field_tag :deposit_amount, 'Monto' %>
+    		<p><%= text_field_tag :deposit_company, 'Nombre o compañía afianzadora' %>
 
-    		<p><%= label_tag :email, "¿Se hizo efectiva su fianza?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
-    		<p><%= text_field_tag :health, 'Nombre o compañía afianzadora' %>
+    		<p><%= label_tag :deposit_status, "¿Se hizo efectiva su fianza?" %>
+			<p><%= radio_button_tag :deposit_status, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :deposit_status, 'quincenal' %> No
+    		<p><%= text_field_tag :deposit_status_company_other, 'Nombre o compañía afianzadora' %>
 
     		Tiene usted...
-    		<p><%= label_tag :email, "¿Cuenta de Ahorros?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
-    		<p><%= text_field_tag :health, 'Banco' %>
+    		<p><%= label_tag :saving_account, "¿Cuenta de Ahorros?" %>
+			<p><%= radio_button_tag :saving_account, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :saving_account, 'quincenal' %> No
+    		<p><%= text_field_tag :saving_account_bank, 'Banco' %>
 
-    		<p><%= label_tag :email, "¿Cuenta de Cheques?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
-    		<p><%= text_field_tag :health, 'Banco' %>
+    		<p><%= label_tag :checks_account, "¿Cuenta de Cheques?" %>
+			<p><%= radio_button_tag :checks_account, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :checks_account, 'quincenal' %> No
+    		<p><%= text_field_tag :checks_account_bank, 'Banco' %>
 
-    		<p><%= label_tag :email, "Tarjeta de crédito" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
-    		<p><%= text_field_tag :health, 'Banco' %>
+    		<p><%= label_tag :credit_card, "Tarjeta de crédito" %>
+			<p><%= radio_button_tag :credit_card, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :credit_card, 'quincenal' %> No
+    		<p><%= text_field_tag :credit_card_bank, 'Banco' %>
 
-    		<p><%= label_tag :email, "¿Otras cuentas bancarias?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
-    		<p><%= text_field_tag :health, '¿Cuántas?' %>
+    		<p><%= label_tag :other_bank_accounts, "¿Otras cuentas bancarias?" %>
+			<p><%= radio_button_tag :other_bank_accounts, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :other_bank_accounts, 'quincenal' %> No
+    		<p><%= text_field_tag :other_bank_accounts_amount, '¿Cuántas?' %>
 
-    		<p><%= label_tag :email, "¿Seguro de vida?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
-    		<p><%= text_field_tag :health, 'Suma asegurada' %>
-    		<p><%= text_field_tag :health, 'Compañía aseguradora' %>
+    		<p><%= label_tag :life_insurance, "¿Seguro de vida?" %>
+			<p><%= radio_button_tag :life_insurance, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :life_insurance, 'quincenal' %> No
+    		<p><%= text_field_tag :life_insurance_amount, 'Suma asegurada' %>
+    		<p><%= text_field_tag :life_insurance_company, 'Compañía aseguradora' %>
 
-    		<p><%= label_tag :email, "¿Seguro de gastos médicos?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
-    		<p><%= text_field_tag :health, 'Compañía aseguradora' %>
+    		<p><%= label_tag :medical_insurance, "¿Seguro de gastos médicos?" %>
+			<p><%= radio_button_tag :medical_insurance, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :medical_insurance, 'quincenal' %> No
+    		<p><%= text_field_tag :medical_insurance_company, 'Compañía aseguradora' %>
 
     	<div class="line-divider"></div>
     	<h3>Datos familiares</h3>
     		
     		<p><strong>Padre</p></strong>
-    		<p><%= text_field_tag :health, 'Nombre' %>
-    		<p><%= text_field_tag :health, 'Domicilio' %>
-    		<p><%= label_tag :email, "¿Depende económicamente de usted?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :father_name, 'Nombre' %>
+    		<p><%= text_field_tag :father_address, 'Domicilio' %>
+    		<p><%= label_tag :father_economic_dependency, "¿Depende económicamente de usted?" %>
+			<p><%= radio_button_tag :father_economic_dependency, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :father_economic_dependency, 'quincenal' %> No
     		<p><strong>Madre</p></strong>
-    		<p><%= text_field_tag :health, 'Nombre' %>
-    		<p><%= text_field_tag :health, 'Domicilio' %>
-    		<p><%= label_tag :email, "¿Depende económicamente de usted?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :mother_name, 'Nombre' %>
+    		<p><%= text_field_tag :mother_address, 'Domicilio' %>
+    		<p><%= label_tag :mother_economic_dependency, "¿Depende económicamente de usted?" %>
+			<p><%= radio_button_tag :mother_economic_dependency, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :mother_economic_dependency, 'quincenal' %> No
     		<p><strong>Hijo</p></strong>
-    		<p><%= text_field_tag :health, 'Nombre' %>
-    		<p><%= text_field_tag :health, 'Domicilio' %>
-    		<p><%= label_tag :email, "¿Depende económicamente de usted?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :son_name, 'Nombre' %>
+    		<p><%= text_field_tag :son_address, 'Domicilio' %>
+    		<p><%= label_tag :son_economic_dependency, "¿Depende económicamente de usted?" %>
+			<p><%= radio_button_tag :son_economic_dependency, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :son_economic_dependency, 'quincenal' %> No
     		<p><strong>Otro</p></strong>
-    		<p><%= text_field_tag :health, 'Nombre' %>
-    		<p><%= text_field_tag :health, 'Domicilio' %>
-    		<p><%= text_field_tag :health, 'Parentesco' %>
-    		<p><%= label_tag :email, "¿Depende económicamente de usted?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :other_related_name, 'Nombre' %>
+    		<p><%= text_field_tag :other_related_address, 'Domicilio' %>
+    		<p><%= text_field_tag :other_related_relationship, 'Parentesco' %>
+    		<p><%= label_tag :other_related_economic_dependency, "¿Depende económicamente de usted?" %>
+			<p><%= radio_button_tag :other_related_economic_dependency, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :other_related_economic_dependency, 'quincenal' %> No
     		<p><strong>Otro 2</p></strong>
-    		<p><%= text_field_tag :health, 'Nombre' %>
-    		<p><%= text_field_tag :health, 'Domicilio' %>
-    		<p><%= text_field_tag :health, 'Parentesco' %>
-    		<p><%= label_tag :email, "¿Depende económicamente de usted?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= text_field_tag :other_related_name2, 'Nombre' %>
+            <p><%= text_field_tag :other_related_address2, 'Domicilio' %>
+            <p><%= text_field_tag :other_related_relationship2, 'Parentesco' %>
+            <p><%= label_tag :other_related_economic_dependency2, "¿Depende económicamente de usted?" %>
+            <p><%= radio_button_tag :other_related_economic_dependency2, 'catorcenal' %> Sí
+            <p><%= radio_button_tag :other_related_economic_dependency2, 'quincenal' %> No
 
-    		<p><%= label_tag :email, "En caso de ser soltero, ¿vive con sus padres?" %>
-			<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
-    		<p><%= text_field_tag :health, '¿Dónde?' %>
+    		<p><%= label_tag :bachelor_status, "En caso de ser soltero, ¿vive con sus padres?" %>
+			<p><%= radio_button_tag :bachelor_status, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :bachelor_status, 'quincenal' %> No
+    		<p><%= text_field_tag :bachelor_status_living, '¿Dónde?' %>
 
     	<div class="line-divider"></div>
     	<h3>Experiencia laboral</h3>
 
     		<p><strong>Datos de sus últimos tres empleos, del más reciente al más antiguo</p></strong>
     		<p><strong>Trabajo 1</p></strong>
-    		<p><%= text_field_tag :health, 'Nombre del Patrón' %>
-    		<p><%= text_field_tag :health, 'Domicilio' %>
-    		<p><%= text_field_tag :health, 'Teléfono' %>
-    		<p><%= date_field_tag :health, 'Fecha de ingreso' %>
-    		<p><%= date_field_tag :health, 'Fecha de separación' %>
-    		<p><%= text_field_tag :health, 'Motivo' %>
-    		<p><%= text_field_tag :health, 'Puesto' %>
-    		<p><%= text_field_tag :health, 'Actividades principales' %>
-    		<p><%= text_field_tag :health, 'Sueldo inicial' %>
-    		<p><%= text_field_tag :health, 'Sueldo final' %>
+    		<p><%= text_field_tag :employer_name_1, 'Nombre del Patrón' %>
+    		<p><%= text_field_tag :employer_address_1, 'Domicilio' %>
+    		<p><%= text_field_tag :employer_phone_1, 'Teléfono' %>
+    		<p><%= date_field_tag :employer_start_1, 'Fecha de ingreso' %>
+    		<p><%= date_field_tag :employer_leaving_1, 'Fecha de separación' %>
+    		<p><%= text_field_tag :employer_leaving_reason_1, 'Motivo' %>
+    		<p><%= text_field_tag :employer_position_1, 'Puesto' %>
+    		<p><%= text_field_tag :emploer_activities_1, 'Actividades principales' %>
+    		<p><%= text_field_tag :employer_initial_salary_1, 'Sueldo inicial' %>
+    		<p><%= text_field_tag :employer_final_salary_1, 'Sueldo final' %>
     		<p><strong>Trabajo 2</p></strong>
-    		<p><%= text_field_tag :health, 'Nombre del Patrón' %>
-    		<p><%= text_field_tag :health, 'Domicilio' %>
-    		<p><%= text_field_tag :health, 'Teléfono' %>
-    		<p><%= date_field_tag :health, 'Fecha de ingreso' %>
-    		<p><%= date_field_tag :health, 'Fecha de separación' %>
-    		<p><%= text_field_tag :health, 'Motivo' %>
-    		<p><%= text_field_tag :health, 'Puesto' %>
-    		<p><%= text_field_tag :health, 'Actividades principales' %>
-    		<p><%= text_field_tag :health, 'Sueldo inicial' %>
-    		<p><%= text_field_tag :health, 'Sueldo final' %>
+    		<p><%= text_field_tag :employer_name_2, 'Nombre del Patrón' %>
+            <p><%= text_field_tag :employer_address_2, 'Domicilio' %>
+            <p><%= text_field_tag :employer_phone_2, 'Teléfono' %>
+            <p><%= date_field_tag :employer_start_2, 'Fecha de ingreso' %>
+            <p><%= date_field_tag :employer_leaving_2, 'Fecha de separación' %>
+            <p><%= text_field_tag :employer_leaving_reason_2, 'Motivo' %>
+            <p><%= text_field_tag :employer_position_2, 'Puesto' %>
+            <p><%= text_field_tag :emploer_activities_2, 'Actividades principales' %>
+            <p><%= text_field_tag :employer_initial_salary_2, 'Sueldo inicial' %>
+            <p><%= text_field_tag :employer_final_salary_2, 'Sueldo final' %>
     		<p><strong>Trabajo 3</p></strong>
-    		<p><%= text_field_tag :health, 'Nombre del Patrón' %>
-    		<p><%= text_field_tag :health, 'Domicilio' %>
-    		<p><%= text_field_tag :health, 'Teléfono' %>
-    		<p><%= date_field_tag :health, 'Fecha de ingreso' %>
-    		<p><%= date_field_tag :health, 'Fecha de separación' %>
-    		<p><%= text_field_tag :health, 'Motivo' %>
-    		<p><%= text_field_tag :health, 'Puesto' %>
-    		<p><%= text_field_tag :health, 'Actividades principales' %>
-    		<p><%= text_field_tag :health, 'Sueldo inicial' %>
-    		<p><%= text_field_tag :health, 'Sueldo final' %>
+    		<p><%= text_field_tag :employer_name_3, 'Nombre del Patrón' %>
+            <p><%= text_field_tag :employer_address_3, 'Domicilio' %>
+            <p><%= text_field_tag :employer_phone_3, 'Teléfono' %>
+            <p><%= date_field_tag :employer_start_3, 'Fecha de ingreso' %>
+            <p><%= date_field_tag :employer_leaving_3, 'Fecha de separación' %>
+            <p><%= text_field_tag :employer_leaving_reason_3, 'Motivo' %>
+            <p><%= text_field_tag :employer_position_3, 'Puesto' %>
+            <p><%= text_field_tag :emploer_activities_3, 'Actividades principales' %>
+            <p><%= text_field_tag :employer_initial_salary_3, 'Sueldo inicial' %>
+            <p><%= text_field_tag :employer_final_salary_3, 'Sueldo final' %>
 
     	<div class="line-divider"></div>
     	<h3>Datos adicionales</h3>
 
-    		<p><%= text_field_tag :health, 'Cursos recibidos' %>
-    		<p><%= text_field_tag :health, 'Conocimientos o habilidades' %>
+    		<p><%= text_field_tag :courses, 'Cursos recibidos o impartidos' %>
+    		<p><%= text_field_tag :skills, 'Conocimientos o habilidades' %>
 
     	<div class="line-divider"></div>
     	<h3>Pretenciones laborales</h3>
-    		<p><%= text_field_tag :health, 'Sueldo deseado' %>
-    		<p><%= text_field_tag :health, 'Puesto pretendido' %>
+    		<p><%= text_field_tag :expected_salary, 'Sueldo deseado' %>
+    		<p><%= text_field_tag :expected_position, 'Puesto pretendido' %>
 
     		<p><strong>Disponibilidad</strong></p>
-    		<p><%= label_tag :health, 'Horario a partir de' %>
-    		<p><%= date_field_tag :health %>
-    		<p><%= time_field_tag :health %>
+    		<p><%= label_tag :schedule_available, 'Horario a partir de' %>
+    		<p><%= date_field_tag :available_date %>
+    		<p><%= time_field_tag :available_hour %>
 
-    		<p><%= label_tag :health, 'Disponibilidad para viajar' %>
-    		<p><%= radio_button_tag :health, 'catorcenal' %> Sí
-    		<p><%= radio_button_tag :health, 'quincenal' %> No
+    		<p><%= label_tag :travel_availability, 'Disponibilidad para viajar' %>
+    		<p><%= radio_button_tag :travel_availability, 'catorcenal' %> Sí
+    		<p><%= radio_button_tag :travel_availability, 'quincenal' %> No
 
 
 		<div class="line-divider"></div>
