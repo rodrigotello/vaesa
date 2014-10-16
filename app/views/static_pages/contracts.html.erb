@@ -3,13 +3,6 @@
 		<h1>Lista de Contratos</h1>
 		<p>Aquí la lista de contratos</p>
 	</div>
-
-
-
-
-
-
-
 	
 	<div class="company-name-box">
 		<h2>Vaesa</h2>
@@ -24,7 +17,7 @@
 				</div>
 				<div class="icon-box">
 					<%= image_tag 'docx.png' %>
-					<p><%= link_to 'Descargar', download_path(doc: 1, name: @name)%>	
+					<p><%= link_to 'Descargar', download_path(doc: 1, name_first: @name_first, lastnamea: @lastnamea)%>	
 				</div>
 		</div>
 		<div class="contract-box">
