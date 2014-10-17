@@ -51,8 +51,8 @@
 			<p><%= label_tag :rfc, "RFC" %>
 			<p><%= text_field_tag :rfc, 'RFC'  %>
 			
-			<p><%= label_tag :socialid, "Seguro social" %>
-			<p><%= text_field_tag :socialid, 'Seguro social'  %>
+			<p><%= label_tag :social_id, "Seguro social" %>
+			<p><%= text_field_tag :social_id, 'Seguro social'  %>
 
 			<p><%= label_tag :education, "Grado académico" %>
 			<p><%= radio_button_tag :education, 'ninguno', :checked => true %> Ninguno
@@ -64,15 +64,18 @@
 			
 		<div class="line-divider"></div>
 		<h3>Datos laborales</h3>
-		
-			<p><%= label_tag :salarymode, "Forma de pago" %>
-			<p><%= radio_button_tag :salarymode, 'semanal', :checked => true %> Semanal
-    		<p><%= radio_button_tag :salarymode, 'catorcenal' %> Catorcenal
-    		<p><%= radio_button_tag :salarymode, 'quincenal' %> Quincenal
-    		<p><%= radio_button_tag :salarymode, 'mensual' %> Mensual
+            <%# Falta agregarlo a la lista de valores%>
+            <p><%= text_field_tag :salary_amount_number, 'Salario (número)' %>
+            <p><%= text_field_tag :salary_amount_letters, 'Salario (ej. CERO, CERO CERO PESOS 00/100 M.N.)'%>
+
+			<p><%= label_tag :salary_mode, "Forma de pago" %>
+			<p><%= radio_button_tag :salary_mode, 'semanal', :checked => true %> Semanal
+    		<p><%= radio_button_tag :salary_mode, 'catorcenal' %> Catorcenal
+    		<p><%= radio_button_tag :salary_mode, 'quincenal' %> Quincenal
+    		<p><%= radio_button_tag :salary_mode, 'mensual' %> Mensual
 			
-			<p><%= label_tag :startingdate, "Fecha de ingreso" %>
-			<p><%= date_field_tag :startingdate %>
+			<p><%= label_tag :starting_date, "Fecha de ingreso" %>
+			<p><%= date_field_tag :starting_date %>
 			
 			<p><%= label_tag :tasks, "Funciones a desempeñar" %>
 			<p><%= text_field_tag :tasks %>
@@ -115,7 +118,7 @@
     		<p><%= radio_button_tag :health, 'catorcenal' %> Mala
     		<p><%= radio_button_tag :health, 'quincenal' %> Regular
 			
-			<p><%= label_tag :health, "¿Padece de alguna enfermedad?" %>
+			<p><%= label_tag :health_disease, "¿Padece de alguna enfermedad?" %>
 			<p><%= radio_button_tag :health_disease, 'catorcenal' %> Si
     		<p><%= radio_button_tag :health_disease, 'quincenal' %> No
     		<p><%= text_field_tag :health_disease_description, '¿cual?' %>
@@ -336,7 +339,7 @@
     		<p><%= date_field_tag :employer_leaving_1, 'Fecha de separación' %>
     		<p><%= text_field_tag :employer_leaving_reason_1, 'Motivo' %>
     		<p><%= text_field_tag :employer_position_1, 'Puesto' %>
-    		<p><%= text_field_tag :emploer_activities_1, 'Actividades principales' %>
+    		<p><%= text_field_tag :employer_activities_1, 'Actividades principales' %>
     		<p><%= text_field_tag :employer_initial_salary_1, 'Sueldo inicial' %>
     		<p><%= text_field_tag :employer_final_salary_1, 'Sueldo final' %>
     		<p><strong>Trabajo 2</p></strong>
@@ -347,7 +350,7 @@
             <p><%= date_field_tag :employer_leaving_2, 'Fecha de separación' %>
             <p><%= text_field_tag :employer_leaving_reason_2, 'Motivo' %>
             <p><%= text_field_tag :employer_position_2, 'Puesto' %>
-            <p><%= text_field_tag :emploer_activities_2, 'Actividades principales' %>
+            <p><%= text_field_tag :employer_activities_2, 'Actividades principales' %>
             <p><%= text_field_tag :employer_initial_salary_2, 'Sueldo inicial' %>
             <p><%= text_field_tag :employer_final_salary_2, 'Sueldo final' %>
     		<p><strong>Trabajo 3</p></strong>
@@ -358,7 +361,7 @@
             <p><%= date_field_tag :employer_leaving_3, 'Fecha de separación' %>
             <p><%= text_field_tag :employer_leaving_reason_3, 'Motivo' %>
             <p><%= text_field_tag :employer_position_3, 'Puesto' %>
-            <p><%= text_field_tag :emploer_activities_3, 'Actividades principales' %>
+            <p><%= text_field_tag :employer_activities_3, 'Actividades principales' %>
             <p><%= text_field_tag :employer_initial_salary_3, 'Sueldo inicial' %>
             <p><%= text_field_tag :employer_final_salary_3, 'Sueldo final' %>
 
